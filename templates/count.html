@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>字数统计</title>
+</head>
+<body>
+<h1>统计结果,总字数为{{ count }}字</h1>
+<a href="..">回到主页</a>
+<h2>你的文本</h2>
+{{ text }}
+<br><br>
+{{ sorted }}
+<br><br>
+{% for word,count in sorted %}
+{{ word  }}  - {{ count }}
+    <br>
+{% endfor %}
+</body>
+</html>
